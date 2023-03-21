@@ -18,7 +18,7 @@ const Populars = ({ popular }) => {
                 <div className='w-full group'>
                   <Image
                     src={`https://image.tmdb.org/t/p/w500/${popular[i].backdrop_path}`}
-                    className='w-full object-cover object-center rounded-md group-hover:scale-110 transition-all'
+                    className='w-full object-cover object-center rounded-md group-hover:scale-110 transition-all duration-[1.3s]'
                     alt={movie.title}
                     width={5000}
                     height={5000}
