@@ -98,7 +98,7 @@ const AddMovie = ({ setShowModal }) => {
           animate={{ translateY: 0 }}
           exit={{ translateY: -1100 }}
           transition={{ duration: 1.2 }}
-          className='h-[60%] w-[50%] bg-lf-btn1 flex flex-col max-sm:w-full max-sm:h-full max-sm:fixed'>
+          className='h-[60%] w-[50%] bg-lf-btn1 flex flex-col max-sm:w-full max-sm:h-full max-sm:fixed max-sm:top-0'>
           <div className='w-full flex justify-end p-5 max-sm:hidden'>
             <Plus
               className='h-6 w-6 fill-white rotate-45 cursor-pointer'
