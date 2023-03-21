@@ -7,7 +7,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Movies from '@/components/Movies/Movies';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import PageLoader from '@/components/PageLoader';
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
   return !isLoading ? (
     <>
       <Head>
-        <title>Liteflix</title>
+        <title>LITEFLIX</title>
       </Head>
       <Image
         src={`https://image.tmdb.org/t/p/w1280/${featured.backdrop_path}`}
@@ -50,6 +50,11 @@ export default function Home() {
       </div>
     </>
   ) : (
-    <PageLoader />
+    <>
+      <Head>
+        <title>LITEFLIX</title>
+      </Head>
+      <PageLoader />
+    </>
   );
 }
