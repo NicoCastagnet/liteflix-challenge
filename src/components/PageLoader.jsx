@@ -8,14 +8,14 @@ const PageLoader = () => {
         initial={{ translateY: -1500 }}
         animate={{ translateY: 0 }}
         transition={{ duration: 1.2, delay: 0.5 }}
-        className='text-9xl uppercase font-thin text-lf-aqua tracking-wider'>
+        className='text-9xl uppercase font-thin text-lf-aqua tracking-wider max-sm:text-7xl'>
         <span className='font-semibold'>Lite</span>flix
       </motion.h1>
       <motion.p
         initial={{ translateX: -1500 }}
         animate={{ translateX: 0 }}
         transition={{ duration: 1.2, delay: 0.5 }}
-        className='text-white text-2xl tracking-widest animate-pulse'>
+        className='text-white text-2xl tracking-widest animate-pulse max-sm:text-xl'>
         The application is loading...
       </motion.p>
     </div>
