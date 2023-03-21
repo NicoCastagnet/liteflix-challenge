@@ -111,7 +111,7 @@ const AddMovie = ({ setShowModal }) => {
               Lite<span className='font-normal'>flix</span>
             </h1>
             <Image
-              src='/assets/profile.webp'
+              src='/profile.webp'
               alt='user-profile'
               className='w-8 h-8 rounded-full cursor-pointer'
               width={5000}

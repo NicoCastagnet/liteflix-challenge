@@ -34,7 +34,7 @@ const Navbar = ({ setShowModal }) => {
           <span className='animate-ping h-3 w-3 bg-lf-aqua rounded-full inline-flex absolute top-7 right-[12.5rem]' />
         </div>
         <Image
-          src='/assets/profile.webp'
+          src='/profile.webp'
           alt='user-profile'
           className='w-8 h-8 rounded-full cursor-pointer'
           width={5000}
