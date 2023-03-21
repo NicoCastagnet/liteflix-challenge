@@ -14,7 +14,7 @@ const Navbar = ({ setShowModal }) => {
       className='w-full flex bg-transparent justify-between py-5 text-white fill-white max-sm:items-center max-sm:justify-between max-sm:px-5'>
       <div className='flex items-center text-center gap-20'>
         <h1 className='uppercase text-lf-aqua font-semibold text-4xl max-sm:hidden'>
-          Lite<span className='font-normal'>flix</span>
+          Lite<span className='font-light'>flix</span>
         </h1>
         <button
           className='flex items-center gap-2 font-semibold'

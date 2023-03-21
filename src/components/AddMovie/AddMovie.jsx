@@ -132,6 +132,7 @@ const AddMovie = ({ setShowModal }) => {
                 <input
                   type={'file'}
                   className='hidden'
+                  accept='image/*'
                   onChange={(e) => loadImage(e)}
                 />
               </label>

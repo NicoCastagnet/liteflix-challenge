@@ -15,7 +15,7 @@ const AddedModal = ({ setShowModal, movie }) => {
           <h1 className='uppercase text-lf-aqua font-semibold text-5xl'>
             Lite<span className='font-normal'>flix</span>
           </h1>
-          <div className='flex flex-col items-center space-y-5'>
+          <div className='flex flex-col items-center text-center space-y-5'>
             <p className='text-white uppercase tracking-wider text-2xl font-semibold'>
               ¡felicitaciones!
             </p>

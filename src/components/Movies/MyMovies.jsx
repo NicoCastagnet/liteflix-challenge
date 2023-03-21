@@ -3,7 +3,6 @@ import Play from '../icons/Play';
 import Star from '../icons/Star';
 import Image from 'next/image';
 import Exclamation from '../icons/Exclamation';
-import { motion } from 'framer-motion';
 
 const MyMovies = () => {
   const [onHover, setOnHover] = useState(false);

@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Movies from '@/components/Movies/Movies';
 import { AnimatePresence, motion } from 'framer-motion';
+import PageLoader from '@/components/PageLoader';
 
 export default function Home() {
   const [featured, setFeatured] = useState([]);
@@ -49,6 +50,6 @@ export default function Home() {
       </div>
     </>
   ) : (
-    <div className='bg-red-600 w-full h-full'>asd</div>
+    <PageLoader />
   );
 }

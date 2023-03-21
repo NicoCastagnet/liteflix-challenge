@@ -8,7 +8,7 @@ function AnimateMovie({ imageMovie }) {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
       exit={{ opacity: 0 }}
-      className='flex flex-col justify-center gap-5 w-full px-16'>
+      className='flex flex-col justify-center gap-5 w-full px-16 max-sm:px-4'>
       <motion.div className='flex items-center relative h-5'>
         {imageMovie.includes('image/') && (
           <motion.p
@@ -31,7 +31,7 @@ function AnimateMovie({ imageMovie }) {
         )}
         {!imageMovie.includes('image/') && (
           <motion.p
-            className='text-left text-white uppercase tracking-wider absolute'
+            className='text-left text-white uppercase tracking-wider absolute max-sm:text-sm'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1.8 }}>
