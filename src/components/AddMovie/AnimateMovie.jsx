@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-function AnimateMovie({ imageMovie }) {
+function AnimateMovie({ imageMovie, setImageLoader }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -64,7 +64,8 @@ function AnimateMovie({ imageMovie }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5 }}
-          className='text-right text-white uppercase tracking-wider font-medium'>
+          className='text-right text-white uppercase tracking-wider font-medium cursor-pointer'
+          onClick={() => setImageLoader(false)}>
           Reintentar
         </motion.p>
       )}

@@ -5,7 +5,6 @@ import Clip from '../icons/Clip';
 import Plus from '../icons/Plus';
 import AnimateMovie from './AnimateMovie';
 import Image from 'next/image';
-import { FileUploader } from 'react-drag-drop-files';
 
 const AddMovie = ({ setShowModal }) => {
   const [imageLoader, setImageLoader] = useState(false);
@@ -137,7 +136,10 @@ const AddMovie = ({ setShowModal }) => {
                 />
               </label>
             ) : (
-              <AnimateMovie imageMovie={imageMovie} />
+              <AnimateMovie
+                imageMovie={imageMovie}
+                setImageLoader={setImageLoader}
+              />
             )}
             <input
               type='text'
