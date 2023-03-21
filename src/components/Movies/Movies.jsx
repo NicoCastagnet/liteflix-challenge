@@ -16,7 +16,7 @@ const Movies = ({ popular }) => {
       transition={{ duration: 1.2, delay: 0.5 }}
       className='flex flex-col items-center justify-center gap-5 relative'>
       <div
-        className='text-white text-lg uppercase flex items-center top-24 gap-2 cursor-pointer absolute max-sm:-top-10'
+        className='text-white text-lg uppercase flex items-center md:top-5 2xl:top-20 gap-2 cursor-pointer absolute max-sm:-top-10'
         onClick={() => setOpenDropdown(!openDropdown)}>
         Ver: <span className='font-semibold'>{option}</span>
         <Chevron
@@ -26,7 +26,7 @@ const Movies = ({ popular }) => {
         />
       </div>
       <div
-        className={`bg-lf-btn1 flex flex-col items-left h-auto w-full py-3 text-white font-semibold z-20 top-[8.5rem] space-y-1 ${
+        className={`bg-lf-btn1 flex flex-col items-left h-auto w-full py-3 text-white font-semibold z-20 top-[3.5rem] 2xl:top-32 space-y-1 ${
           openDropdown ? 'absolute' : 'hidden'
         } max-sm:top-0 max-sm:w-[75%]`}>
         <span className='bg-lf-btn1 rotate-45 w-3 h-3 absolute left-36 -top-1'></span>
