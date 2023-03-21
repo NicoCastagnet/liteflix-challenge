@@ -19,8 +19,9 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       getPopular().then((res) => setPopular(res));
-      getFeatured().then((res) => setFeatured(res));
-      // .then(setIsLoading(false));
+      getFeatured()
+        .then((res) => setFeatured(res))
+        .then(setIsLoading(false));
     }, 2500);
   }, []);
 

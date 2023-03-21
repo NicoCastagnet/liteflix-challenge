@@ -5,13 +5,13 @@ import Clip from '../icons/Clip';
 import Plus from '../icons/Plus';
 import AnimateMovie from './AnimateMovie';
 import Image from 'next/image';
+import { FileUploader } from 'react-drag-drop-files';
 
 const AddMovie = ({ setShowModal }) => {
   const [imageLoader, setImageLoader] = useState(false);
   const [handleButton, setHandleButton] = useState(true);
   const [uploading, setUploading] = useState(true);
   const [uploaded, setUploaded] = useState(false);
-  const [error, setError] = useState(false);
 
   const [imageMovie, setImageMovie] = useState('');
   const [titleMovie, setTitleMovie] = useState('');
@@ -99,7 +99,7 @@ const AddMovie = ({ setShowModal }) => {
           animate={{ translateY: 0 }}
           exit={{ translateY: -1100 }}
           transition={{ duration: 1.2 }}
-          className='h-[60%] w-[50%] bg-lf-btn1 flex flex-col max-sm:w-full max-sm:h-full'>
+          className='h-[60%] w-[50%] bg-lf-btn1 flex flex-col max-sm:w-full max-sm:h-full max-sm:fixed'>
           <div className='w-full flex justify-end p-5 max-sm:hidden'>
             <Plus
               className='h-6 w-6 fill-white rotate-45 cursor-pointer'
@@ -123,7 +123,7 @@ const AddMovie = ({ setShowModal }) => {
               Agregar película
             </h1>
             {!imageLoader ? (
-              <label className='flex items-center gap-2 border border-dashed border-white uppercase text-white font-medium p-10 tracking-wider cursor-pointer'>
+              <label className='flex items-center justify-center gap-2 border border-dashed border-white uppercase text-white font-medium p-10 tracking-wider cursor-pointer'>
                 <Clip className='w-5 h-5 -rotate-45' />
                 <span className='max-sm:hidden'>
                   Agrega un archivo o arrastralo y soltalo aquí

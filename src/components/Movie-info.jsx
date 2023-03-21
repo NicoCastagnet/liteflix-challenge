@@ -10,14 +10,14 @@ const MovieInfo = ({ name }) => {
         initial={{ translateY: -1500 }}
         animate={{ translateY: 0 }}
         transition={{ duration: 1.2, delay: 0.5 }}
-        className='text-white uppercase font-light max-sm:text-2xl'>
+        className='text-white uppercase font-light max-sm:text-xl'>
         Original de <span className='font-semibold'>liteflix</span>
       </motion.h2>
       <motion.h1
         initial={{ translateX: -1500 }}
         animate={{ translateX: 0 }}
         transition={{ duration: 1.2, delay: 0.5 }}
-        className='text-lf-aqua font-bold text-7xl uppercase max-sm:text-5xl max-sm:w-full'>
+        className='text-lf-aqua font-bold text-7xl uppercase max-sm:text-3xl max-sm:w-full'>
         {name}
       </motion.h1>
       <motion.div
