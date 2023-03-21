@@ -49,9 +49,9 @@ const Populars = ({ popular }) => {
                       transition={{ duration: 0.5 }}
                       className='w-full h-full absolute flex flex-col justify-end gap-4 px-4 py-3 text-white bg-[#242424]/70 rounded-md '>
                       <motion.div
-                        initial={{ translateX: 150 }}
+                        initial={{ translateX: 100 }}
                         animate={{ translateX: 0 }}
-                        exit={{ translateX: 150 }}
+                        exit={{ translateX: 100 }}
                         transition={{ duration: 1.2 }}
                         className='flex items-center gap-2 uppercase tracking-widest'>
                         <Play className='w-8 h-8 p-1 fill-white border rounded-full hover:bg-lf-aqua hover:fill-black hover:border-black transition-all' />
@@ -60,9 +60,9 @@ const Populars = ({ popular }) => {
                           : movie.title}
                       </motion.div>
                       <motion.div
-                        initial={{ translateX: -150 }}
+                        initial={{ translateX: -100 }}
                         animate={{ translateX: 0 }}
-                        exit={{ translateX: -150 }}
+                        exit={{ translateX: -100 }}
                         transition={{ duration: 1.2 }}
                         className='flex justify-between w-full tracking-wider'>
                         <div className='flex items-center gap-2'>
